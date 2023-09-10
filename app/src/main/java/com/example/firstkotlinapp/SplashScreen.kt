@@ -14,7 +14,7 @@ class SplashScreen : AppCompatActivity() {
         /*The handler thread to freeze the splash screen for 2 seconds*/
         Handler(Looper.getMainLooper()).postDelayed({
         startActivity(Intent(this,MainActivity::class.java)) /*An explicit intent (knows where will it take) is created*/
+            finish()
         },2000)
-        finish()
     }
 }
